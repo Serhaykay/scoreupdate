@@ -1,0 +1,136 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    padding: 0 20px;
+}
+.card{
+    width: 400px;
+    height: 330px;
+    background-color: #fff;
+    border: 1px solid grey;
+    border-radius: 15px;
+    margin-top: 200px;
+    position: relative;
+}
+.card-header{
+    border-bottom: 1px solid grey;
+    padding: 8px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-header p{
+    font-size: 8px;
+    font-weight: bold;
+    background-color: pink;
+    color: red;
+    padding: 2px 5px;
+    border-radius: 5px;
+}
+.card-header div{
+    display: flex;
+    align-items: center;
+}
+.card-header div h3{
+    font-size: 12px;
+}
+.icons i{
+    color: #999;
+    margin-left: 5px;
+    font-size: 10px;
+}
+.results{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 15px;
+    position: absolute;
+
+}
+.team{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.image{
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    border: 1px solid white;
+    box-shadow: 0 0 18px rgba(0, 0, 0, 0.5);
+}
+.image img{
+    height: 50px;
+    width: 50px;
+}
+.team-name h3{
+    font-size: 20px;
+    padding-top: 25px;
+}
+.results-col{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px;
+}
+.results-col p{
+    color: #777;
+    font-size: 12px;
+    font-weight: bold;
+    text-align: center;
+}
+span{
+    font-weight: bolder;
+    color: black;
+}
+.results-col h1{
+    padding: 20px 0;
+    font-size: 50px;
+}
+.results-col .time{
+    color: rgb(181, 127, 127);
+    padding: 0 0 10px 0;
+}
+.odds{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 8px;
+}
+.odds button{
+    padding: 3px 10px;
+    border: 1px solid #777;
+    font-weight: bold;
+    color: #777;
+}
+.bet-button{
+    align-items: center;
+    position: absolute;
+    bottom: -32px;
+}
+/*Media screen for the button*/
+@media (max-width: 767px) {
+    .bet-button{
+        bottom: -25px;
+    }
+}
+
+.bet-button button{
+    padding: 8px 20px;
+    color: #fff;
+    background-color: rgb(101, 76, 243);
+    border-radius: 8px;
+    border: none;
+}
